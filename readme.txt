@@ -20,3 +20,18 @@ source ~/catkin_ws/devel/setup.bash
 DOWNLOAD quad simulator
 https://github.com/udacity/RoboND-Controls-Lab/releases
 
+
+TERMINAL1
+source ~/catkin_ws/devel/setup.bash
+roscore
+
+LAUNCH THE QUADCOPTER SIMULATOR
+
+TERMINAL2
+source ~/catkin_ws/devel/setup.bash
+rostopic echo /quad_rotor/pose
+
+TERMINAL3
+source ~/catkin_ws/devel/setup.bash
+roslaunch quad_controller hover_controller.launch
+
