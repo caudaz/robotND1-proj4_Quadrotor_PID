@@ -9,6 +9,9 @@ cd ~/catkin_ws
 catkin_make
 source ~/catkin_ws/devel/setup.bash
 
+cd ~/catkin_ws/src/robotND1-proj4_Quadrotor_PID/quad_controller/cfg
+chmod 755 *
+
 DOWNLOAD quad simulator
 https://github.com/udacity/RoboND-Controls-Lab/releases
 
