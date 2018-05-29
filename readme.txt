@@ -9,6 +9,9 @@ rosdep install --from-paths src --ignore-src --rosdistro=kinetic -y
 cd ~/catkin_ws/src/robotND1-proj4_Quadrotor_PID/quad_controller/cfg
 chmod 755 *
 
+~/catkin_ws/src/robotND1-proj4_Quadrotor_PID/quad_controller/scripts
+chmod 755 *
+
 cd ~/catkin_ws
 catkin_make
 source ~/catkin_ws/devel/setup.bash
