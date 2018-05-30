@@ -21,6 +21,8 @@ source ~/catkin_ws/devel/setup.bash
 
 UPDATED quad_controller/src/quad_controller/pid_controller.py (USING LESSONS CODE)
 
+########### HOVER CONTROLLER #############################
+
 TERMINAL1
 source ~/catkin_ws/devel/setup.bash
 roscore
@@ -36,5 +38,7 @@ TERMINAL3
 source ~/catkin_ws/devel/setup.bash
 roslaunch quad_controller hover_controller.launch
 -click on "hover_controller", set target height and K values
+
+################  
 
 
