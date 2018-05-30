@@ -38,6 +38,7 @@ rostopic echo /quad_rotor/pose
 source ~/catkin_ws/devel/setup.bash
 roslaunch quad_controller hover_controller.launch
 -click on "hover_controller", set target height and K values
+-use_dr_set_point(x) make sure to check 
 
 ################  TUNING #########################
 
@@ -65,6 +66,7 @@ rostopic echo /quad_rotor/pose
 source ~/catkin_ws/devel/setup.bash
 roslaunch quad_controller attitude_controller.launch
 -click on "attitude_controller", set target height and K values
+-use_dr_set_point(x) make sure to check 
 
 ########### POSITIONAL CONTROLLER #############################
 
@@ -83,3 +85,4 @@ rostopic echo /quad_rotor/pose
 source ~/catkin_ws/devel/setup.bash
 roslaunch quad_controller position_controller.launch
 -click on "position_controller", set target height and K values
+-use_dr_set_point(x) make sure to check 
