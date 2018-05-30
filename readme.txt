@@ -21,7 +21,7 @@ source ~/catkin_ws/devel/setup.bash
 
 UPDATED quad_controller/src/quad_controller/pid_controller.py (USING LESSONS CODE)
 
-########### HOVER CONTROLLER #############################
+########### HOVER CONTROLLER and DYNAMIC RECONFIGURE #############################
 
 1-TERMINAL
 source ~/catkin_ws/devel/setup.bash
