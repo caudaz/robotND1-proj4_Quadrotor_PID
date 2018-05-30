@@ -23,18 +23,18 @@ UPDATED quad_controller/src/quad_controller/pid_controller.py (USING LESSONS COD
 
 ########### HOVER CONTROLLER #############################
 
-TERMINAL1
+1-TERMINAL
 source ~/catkin_ws/devel/setup.bash
 roscore
 
-LAUNCH THE QUADCOPTER SIMULATOR
-TURN INPUT OFF TO CONTROL WITH ROS
+2-LAUNCH THE QUADCOPTER SIMULATOR
+"INPUT OFF" TO CONTROL WITH ROS
 
-TERMINAL2
+2-TERMINAL
 source ~/catkin_ws/devel/setup.bash
 rostopic echo /quad_rotor/pose
 
-TERMINAL3
+3-TERMINAL
 source ~/catkin_ws/devel/setup.bash
 roslaunch quad_controller hover_controller.launch
 -click on "hover_controller", set target height and K values
