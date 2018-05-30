@@ -39,6 +39,12 @@ source ~/catkin_ws/devel/setup.bash
 roslaunch quad_controller hover_controller.launch
 -click on "hover_controller", set target height and K values
 
-################  
+################  TUNING #########################
+
+4-TERMINAL
+source ~/catkin_ws/devel/setup.bash
+rosrun quad_controller hover_zn_tuner_node
+              OR    
+rosrun quad_controller hover_twiddle_tuner_node
 
 
