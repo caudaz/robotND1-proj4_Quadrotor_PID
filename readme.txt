@@ -65,3 +65,21 @@ rostopic echo /quad_rotor/pose
 source ~/catkin_ws/devel/setup.bash
 roslaunch quad_controller attitude_controller.launch
 -click on "attitude_controller", set target height and K values
+
+########### POSITIONAL CONTROLLER #############################
+
+1-TERMINAL
+source ~/catkin_ws/devel/setup.bash
+roscore
+
+2-LAUNCH THE QUADCOPTER SIMULATOR
+"INPUT OFF" TO CONTROL WITH ROS
+
+2-TERMINAL
+source ~/catkin_ws/devel/setup.bash
+rostopic echo /quad_rotor/pose
+
+3-TERMINAL
+source ~/catkin_ws/devel/setup.bash
+roslaunch quad_controller position_controller.launch
+-click on "position_controller", set target height and K values
