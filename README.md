@@ -3,7 +3,7 @@
 DOWNLOAD quad simulator
 https://github.com/udacity/RoboND-Controls-Lab/releases
 
-
+```
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/
 catkin_make
@@ -20,36 +20,44 @@ chmod 755 *
 cd ~/catkin_ws
 catkin_make
 source ~/catkin_ws/devel/setup.bash
+```
 
 UPDATED quad_controller/src/quad_controller/pid_controller.py (USING LESSONS CODE)
 
 ########### HOVER CONTROLLER and DYNAMIC RECONFIGURE #############################
 
 1-TERMINAL
+```
 source ~/catkin_ws/devel/setup.bash
 roscore
+```
 
 2-LAUNCH THE QUADCOPTER SIMULATOR
 "INPUT OFF" TO CONTROL WITH ROS
 
 2-TERMINAL
+```
 source ~/catkin_ws/devel/setup.bash
 rostopic echo /quad_rotor/pose
+```
 
 3-TERMINAL
+```
 source ~/catkin_ws/devel/setup.bash
 roslaunch quad_controller hover_controller.launch
+```
 -click on "hover_controller", set target height and K values
 -use_dr_set_point(x) make sure to check 
 
 ################  TUNING #########################
 
 4-TERMINAL
+```
 source ~/catkin_ws/devel/setup.bash
 rosrun quad_controller hover_zn_tuner_node
               OR    
 rosrun quad_controller hover_twiddle_tuner_node
-
+```
 
 ########### ATTITUDE CONTROLLER #############################
 
@@ -61,30 +69,40 @@ roscore
 "INPUT OFF" TO CONTROL WITH ROS
 
 2-TERMINAL
+```
 source ~/catkin_ws/devel/setup.bash
 rostopic echo /quad_rotor/pose
+```
 
 3-TERMINAL
+```
 source ~/catkin_ws/devel/setup.bash
 roslaunch quad_controller attitude_controller.launch
+```
 -click on "attitude_controller", set target height and K values
 -use_dr_set_point(x) make sure to check 
 
 ########### POSITIONAL CONTROLLER #############################
 
 1-TERMINAL
+```
 source ~/catkin_ws/devel/setup.bash
 roscore
+```
 
 2-LAUNCH THE QUADCOPTER SIMULATOR
 "INPUT OFF" TO CONTROL WITH ROS
 
 2-TERMINAL
+```
 source ~/catkin_ws/devel/setup.bash
 rostopic echo /quad_rotor/pose
+```
 
 3-TERMINAL
+```
 source ~/catkin_ws/devel/setup.bash
 roslaunch quad_controller position_controller.launch
+```
 -click on "position_controller", set target height and K values
 -use_dr_set_point(x) make sure to check 
